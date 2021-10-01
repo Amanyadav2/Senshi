@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    
+    <head>
+    <titile></titile>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Kankyō</a>
+        <ul>
+            <li><a href="#" class="active"><b>Home</b></a></li>
+            <li><a href="#"><b>About</b></a></li>
+            <li><a href="#"><b>Destination</b></a></li>
+            <li><a href="#"><b>contact</b></a></li>
+        </ul>
+    </header>
+    <section>
+        <div id="rock">
+       <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        </div>
+        <img src="forest.jpg" id="forest">
+        <a href="#" id="btn">
+            <h2 id="text"><span><b>Energy Conservation is the Foundation of</b></span><br>Energy Independence</h2>
+
+        </a>
+        
+        
+    </section>
+    <div class="sec">
+        
+        <h2>Energy crisis</h2>
+          <p>Energy crisis and environmental concerns raised the necessity for the new biofuels. 
+              Biodiesel is a clean alternative to fossil fuel. A green approach for biodiesel production through enzymatic 
+              biodiesel production has gained a lot of attention due to the drawbacks of chemical methods. Promising enzymatic 
+              processes are established for biodiesel production. The main obstacle for the industrialization of enzymatic 
+              process would be overall cost of production. Production cost could be reduced by increasing the 
+              productivity or by increasing the catalytic efficiency of lipases. Immobilization and genetic engineering methods 
+              appear to be an attractive way to obtain more active, stable, and reusable lipases in different reaction systems. 
+              Operational parameters like water content, temperature, solvent, acyl acceptors, and so on plays key role in 
+              transesterification process. Along with all these technical operational conditions, novel bioreactor designing has 
+              also promising challenges in order to make biodiesel a great potential commercial fuel in future.
+              During election years, there is a renewed debate on how “real” the energy crisis is in the world. 
+              One side will always say it is based on faulty science and politics; the other will say that the other side is basing
+             their findings on junk science and political interests. The best way to sum up the reality of the energy crisis is that
+             you cannot have growing demands on limited resources without eventually running out of the resource.
+            That is just common sense. What is really at play in the discussion about how real the energy crisis is concerns the perception 
+            of responsibility for the future. There is no real energy crisis if you are not concerned about life after your time on Earth is 
+            gone. However, there is a genuine energy crisis if you care about the future that the next generations will inherit.<br>
+             </p>
+    </div>
+ 
+    <script>
+        let text= document.getElementById('text');
+      let bird1= document.getElementById('bird1');
+        let bird2= document.getElementById('bird2');
+        let btn= document.getElementById('btn');
+        let rocks= document.getElementById('rocks');
+        let forest= document.getElementById('forest');
+        let water= document.getElementById('water');
+        let header= document.getElementById('header');
+
+       window.addEventListener('scroll',function()
+       {
+           let value=window.scrollY;
+        text.style.top= 35 + value * -0.5 + '%';
+        bird1.style.top = value * -1.5 + 'px';
+        bird1.style.left = value * 2 + 'px';
+        bird2.style.top = value * -1.5 + 'px';
+        bird2.style.left = value * -5 + 'px';
+        btn.style.marginTop= value * 1.5 + 'px';
+        forest.style.top =value * 0.25 + 'px';
+        header.style.top = value * 0.5 + 'px';
+
+    })
+ </script>
+
+</body>
+</html>
