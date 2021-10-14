@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="split.css">
+    <title>Split page on Page scroll</title>
+</head>
+<body>
+    <section>
+        <div class="side" id="side1">
+            <video src="videoplayback.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+        <div class="side" id="side2">
+            <video src="videoplayback.mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="content">
+        <h2>What is Enjomania?</h2>
+        <br><br>
+        <p>
+            The goal is to supply power 24/7 to all consumers at an economic tariff. To reach that goal, conservation of energy plays a vital role, says Chairman of Andhra Pradesh Electricity Regulatory Commission (APERC) Justice G. Bhavani Prasad.
+
+He was here to address delegates at a workshop on ‘Energy conservation and efficiency measures for industries’ organised by the Andhra Pradesh Eastern Power Distribution Company Limited on Friday.
+
+Appreciating the initiative taken by Prime Minister Narendra Modi and Chief Minister N. Chandrababu Naidu on energy conservation, he said, “It is the duty of every individual to conserve energy. People can save energy at home and at work place. We can also contribute to the conservation by using standard electrical equipment.”
+
+According to him, 1 MW of saving at the consumer’s end is equal to 1.25 MW saved at the generation capacity, which implies a capital cost saving of Rs. 6.25 crore.
+Chief Executive Officer of State Energy Conservation Mission (SECM) A. Chandra Sekhara Reddy said that as part of the DELP (DSM- based efficient lighting programme), the Chief Minister had asked for distribution of 22 lakh LED bulbs to domestic consumers in Guntur district in the first phase.
+“LED technology can save about 80 per cent of energy consumed by normal filament bulbs. We now intend to extend the distribution to other districts such as Anantapur, Srikakulam, West Godavari,” said Mr. Chandra Sekhara Reddy.
+
+Under the DELP initiative, domestic consumers can approach the nearest Discom office and exchange two filament bulbs and take two LED bulbs by just paying Rs. 10 each. In the open market, an LED bulb costs Rs. 400.
+
+As per an estimate by the SECM, if the DELP initiative is implemented across the State by 2016, the government will be saving around 500 MW of grid demand in the domestic sector alone.
+
+The estimated energy consumption in the State per annum is 56,000 MU and the conservation potential is stated to be 14,000 MU.
+
+“Even if we can achieve 50 per cent of this, we will be saving 7,000 MU,” said Mr. Chandra Sekhara Reddy.
+
+A poster on the DELP initiative was released by Justice Bhavani Prasad in the presence of the CMD of APEPDCL M.V. Seshagiri Babu.
+    <script>
+        let side1 = document.getElementById('side1');
+        let side2 = document.getElementById('side2');
+
+        window.addEventListener('scroll',function(){
+            side1.style.left = -window.pageYOffset+'px';
+            side2.style.left = window.pageYOffset+'px';
+        })
+    </script>
+
+</body>
+</html>
